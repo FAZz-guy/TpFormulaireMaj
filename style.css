@@ -1,0 +1,236 @@
+/* {
+     cette partie sert à éliminé les marge par défaut
+    quiont  étéa ttribuer à notre page   */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(217, 145, 145);
+
+}
+
+
+header {
+  
+  margin: 10px;  
+  padding: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.17);
+  border-radius: 10px;
+}
+
+/* les unités "vh" "vw" sont attribué au mésure visible sur la feêtre
+le "%" quand lui definit le pourcentage de son élément parent */
+/* 
+le display grid permet de créé des grille, il est souvent accompagné
+de ses paramètre  "grid-template-columns" pour les separtion en colonne 
+"grid-template-rows" pour les separation en ligne 
+et le " gride area pour definir les emplacerment qu'on souhaite 
+faire prendre a nos différent élément " */
+form {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 40% 50% 10%;
+  background: rgba(0, 0, 0, 0.17);
+  margin: 0 auto;
+  height: 500px;
+  width: 800px;
+  border-radius: 20px 0px;
+  box-shadow: 0 0 5px cyan;
+  grid-template-areas:
+  /* ici je définis l'emplacement que douit prendre chaque élément*/ 
+  "i p"
+    "o p"
+    "o v"
+}
+
+.projet
+
+  {
+  grid-area: p;
+}
+
+.option {
+  grid-area: o;
+  /*dans cette zone j'ttribut chaque lettre  */
+
+}
+
+.valide
+
+/*à leur nom, pour que  notre paramètre puisse definit précédement puisse savoir qui appartient a qui   */
+  {
+  grid-area: v;
+}
+
+.identite {
+  grid-area: i;
+}
+
+/* ------------------------------------------------------------- */
+.identite,
+.projet,
+.option {
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  background: gray;
+}
+
+.identite,
+.projet {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  border-radius: 20px;
+}
+
+.boxn,
+.boxp,
+.boxe {
+  display: flex;
+  background: rgb(209, 209, 209);
+  border-radius: 20px;
+}
+
+.nom,
+.prenom,
+.email,
+#intPro,
+.identite label,
+.projet label,
+.intituler,
+.description {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  background: white;
+  border-radius: 20px;
+}
+
+/* -------------------------------------------------------------- 
+projet
+ -------------------------------------------------------------- */
+.boxIntiPro {
+  display: flex;
+  background: rgb(209, 209, 209);
+  border-radius: 20px;
+}
+
+.boxDesPro {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: rgb(209, 209, 209);
+  border-radius: 20px;
+  align-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+textarea {
+
+  margin: 5px;
+  padding: 5px;
+  background: white;
+  border-radius: 20px;
+}
+
+/* -------------------------------------------------------------- 
+option
+ -------------------------------------------------------------- */
+.option {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.boxEch {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10px;
+  padding: 5px;
+  background: rgb(209, 209, 209);
+  border-radius: 20px;
+}
+
+.boxNat {
+  background: rgb(209, 209, 209);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.boxChoix {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+#radio {
+
+  margin: 0 10px;
+  padding: 10px;
+  background: white;
+  border-radius: 20px;
+}
+
+#choix,
+#echeance {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  background: white;
+  border-radius: 20px;
+}
+
+#nature {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  padding: 5px;
+  background: white;
+  border-radius: 20px;
+}
+
+/* ------------------------------------------------ */
+/* Valider */
+/* ------------------------------------------------ */
+.valide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.valide input {
+  margin: 0 10px;
+}
+
+.valide input[type="submit"] {
+  background-color: #c8e6c9;
+}
+
+.valide input[type="reset"] {
+  background-color: #ffcdd2;
+}
+

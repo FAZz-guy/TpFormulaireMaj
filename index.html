@@ -1,0 +1,149 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaireHtml</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header  >
+    <h1  >Nous soumettre votre projet</h1>
+</header>
+
+<form method="post" action="index.php">
+
+    <div class="identite"> 
+
+        <div class="boxn">
+
+            <label for="nom">Nom</label>
+
+            <div class="nom">
+                <input type="text" id="nom" name="nom">
+            </div>
+              
+        </div>
+
+        <div class="boxp">
+
+            <label for="prenom">Prénom</label>
+
+            <div class="prenom">
+                <input type="text" id="prenom" name="prenom">  
+            </div>
+
+        </div>
+
+        <div class="boxe">
+
+            <label for="email">Email</label>
+
+            <div class="email">
+                <input type="text" id="email" name="email"> 
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ---------------------------------------------------------------------------->
+    <!-- PROJET -->
+    <!-- ---------------------------------------------------------------------------->
+    <div class="projet">
+
+        <div class="boxIntiPro">
+
+            <label for="intPro" id="intPro">Intituler du projet</label>
+           
+            <div class="intituler">
+                <input type="text" id="intituler" name="intituler">
+            </div>  
+       
+        </div>   
+
+        <div class="boxDesPro">
+           
+            <label for="desPro">Description du projet</label>
+           
+            <div class="description">
+                <textarea name="description" id="description" name="description" style="width: 400px; height: 240px;"></textarea>
+            </div>  
+        
+        </div>     
+
+    </div>
+    <!-- ---------------------------------------------------------------------------->
+    <!-- OPTION -->
+    <!-- ---------------------------------------------------------------------------->
+    <div class="option">
+
+        <div class="boxEch">
+
+            <label id="echeance">Echéance </label>
+            <br>
+            <div id="radio">
+              <input type="radio" id="3mois" name="echeance" value="sous 3 mois">
+              <label for="3mois">Sous 3 mois</label>
+              <br>
+              <input type="radio" id="6mois" name="echeance" value="3 à 6 mois">
+              <label for="6mois">3 à 6 mois</label>
+              <br>
+              <input type="radio" id="plus6mois" name="echeance" value="plus de 6mois">
+              <label for="plus6mois">Plus de 6 mois</label>
+            </div>
+
+        </div>
+
+
+
+                <div class="boxNat">
+                   
+                    <div id="nature">Nature  de la démande</div> 
+                    
+                    <div class="boxChoix">
+                    <div id="choix">
+                    <input type="checkbox" name="choix1" value="Investissement">
+                    <label for="choix1">Investissement</label> 
+                    </div>
+
+                    <div id="choix">
+                    <input type="checkbox" name="choix2" value="prestation de conseil"  >
+                    <label for="choix2">prestation de conseil</label> 
+                    </div>
+
+                    <div id="choix">
+                   
+                        <label for="rpSouhaité">Réponse souhaitée </label>
+
+                        <select id="rpSouhaité" name="rpSouhaité">
+                        <option value="3 jours">Sous 3 jours</option>
+                        <option value="8 jours">Sous 8 jours</option>
+                        <option value="1 mois">Sous un mois</option>
+                        </select>
+
+                    </div>
+
+                    </div>
+                </div>
+
+        </div>
+<!-- ---------------------------------------------------------------------------->
+                        <!-- VALIDER -->
+<!-- ---------------------------------------------------------------------------->
+        <div class="valide">
+
+            <input type="submit" name="Valider" value="Valider">
+            <input type="reset" name="reset" value="Réinitialiser">
+            
+        </div>
+    </form>
+
+</body>
+</html>
+

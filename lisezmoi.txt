@@ -1,0 +1,15 @@
+--------------------------------------------------------------AUTOEVALUATION ------------------------------------------------------------ 
+-Le code n'est pas très intuitif, 
+
+-j'aurais dû utiliser des mots plus spécifiques au lieu de "boxN", "BoxNat", etc. 
+-La partie CSS est également désordonnée. 
+
+-J'ai remarqué tardivement que j'aurais pu utiliser des IDs au lieu de créer 10 000 classes pour chaque élément spécifique. 
+Cela a rendu difficile la mise à jour du code, car j'avais déjà utilisé ces classes dans le CSS.
+ 
+-Tout cela est dû à une mauvaise gestion du temps, car il est devenu trop tard pour corriger tout cela, 
+
+-j'ai d'autres matières à réviser. Cela peut être comparé à un délai de livraison dépassé pour un projet client, 
+ce qui peut entraîner des conséquences graves. 
+
+-Je dois revoir les bases complètes et la syntaxe du langage PHP
